@@ -139,6 +139,18 @@ iframe[src*="vimeo.com"] {
     aspect-ratio: 16 / 9;
     height: auto;
 }
+#web_bg {
+    background: url('/source/img/steinsgate.png') center center / cover no-repeat !important;
+}
+
+/* =======================================
+   2. 手机端背景 (屏幕宽度小于 768px 时自动切换)
+   ======================================= */
+@media screen and (max-width: 768px) {
+    #web_bg {
+        background: url('/source/img/steinsgate2.png') center center / cover no-repeat !important;
+    }
+}
 /* 修改首页文章卡片上的标题颜色 */
 #recent-posts > .recent-post-item > .recent-post-info > .article-title {
     color: #ff9a9e !important; /* 修改为你想要的颜色 */

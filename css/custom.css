@@ -60,3 +60,91 @@
   font-style: normal;
   font-display: block;
 }
+
+#footer, #page-header.post-bg, #page-header.page-bg {
+    background: transparent !important;
+}
+#page-header.post-bg::before, #page-header.page-bg::before {
+    background-color: transparent !important;
+}
+#body-wrap #recent-posts > .recent-post-item .recent-post-info,
+#body-wrap #recent-posts > .recent-post-item .recent-post-info::before,
+#body-wrap #recent-posts > .recent-post-item .recent-post-info::after,
+#body-wrap #recent-posts > .recent-post-item .recent-post-info > .article-title,
+#body-wrap #recent-posts > .recent-post-item .recent-post-info > .article-meta-wrap,
+#body-wrap #recent-posts > .recent-post-item .recent-post-info > .content {
+    background: transparent !important;
+    background-color: transparent !important;
+    box-shadow: none !important; 
+}
+/* 文章顶部卡片 */
+#page-header #post-info {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    display: block;
+    text-align: left;
+    border-radius: 10px;
+}
+@media screen and (max-width: 768px) {
+    #page-header #post-info {
+        padding: 15px 20px !important;
+        bottom: 20px !important;
+    }
+
+    #post-info #post-meta > .meta-firstline > span:not(.post-meta-wordcount),
+    #post-info #post-meta > .meta-secondline > span:not(.post-meta-wordcount) {
+        display: none !important;
+    }
+
+    #post-info #post-meta > .meta-firstline > .post-meta-separator,
+    #post-info #post-meta > .meta-secondline > .post-meta-separator {
+        display: none !important;
+    }
+
+    #post-info .post-title {
+        text-align: justify !important;
+        text-align-last: left !important;
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+#article-container .mermaid,
+#article-container .mermaid svg,
+.mermaid-wrap,
+#article-container .mermaid svg rect.mermaid-bg,
+#article-container .mermaid svg rect:first-child {
+    background: transparent !important;
+    fill: transparent !important;
+}
+
+#body-wrap #page .page-title {
+    text-align: center !important;
+}
+
+#article-container {
+    text-align: justify;
+}
+
+iframe[src*="youtube.com"],
+iframe[src*="youtu.be"],
+iframe[src*="vimeo.com"] {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+}
+/* 修改首页文章卡片上的标题颜色 */
+#recent-posts > .recent-post-item > .recent-post-info > .article-title {
+    color: #ff9a9e !important; /* 修改为你想要的颜色 */
+}
+
+/* （可选）鼠标悬浮在标题上时变色，增加互动感 */
+#recent-posts > .recent-post-item > .recent-post-info > .article-title:hover {
+    color: #ff758c !important; /* 鼠标放上去变成稍微深一点的粉色 */
+}

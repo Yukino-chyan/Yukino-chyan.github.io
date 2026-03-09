@@ -56,7 +56,7 @@
 @font-face {
   font-family: 'kai';	
   src: url(/font/LXGWWenKai-Regular.ttf);
-  font-weight: 16px;
+  font-weight: normal;
   font-style: normal;
   font-display: block;
 }

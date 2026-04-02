@@ -140,12 +140,12 @@ iframe[src*="vimeo.com"] {
     height: auto;
 }
 #web_bg {
-    background: url('/img/steinsgate.png') center center / cover no-repeat !important;
+    background: url('https://cdn.luogu.com.cn/upload/image_hosting/328z1u4h.png?x-oss-process=image/resize,m_lfit,h_170,w_225') center center / cover no-repeat !important;
 }
 
 @media screen and (max-width: 768px) {
     #web_bg {
-        background: url('/img/steinsgate2.png') center center / cover no-repeat !important;
+        background: url('https://cdn.luogu.com.cn/upload/image_hosting/i1tef3sp.png?x-oss-process=image/resize,m_lfit,h_170,w_225') center center / cover no-repeat !important;
     }
 }
 /* 修改首页文章卡片上的标题颜色 */
